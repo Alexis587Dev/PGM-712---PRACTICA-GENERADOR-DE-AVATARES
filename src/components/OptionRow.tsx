@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './OptionRow.module.css';
+import styles from '../styles/OptionRow.module.css';
 
 interface OptionRowProps {
   label: string;
