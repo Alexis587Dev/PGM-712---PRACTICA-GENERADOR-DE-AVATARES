@@ -1,0 +1,72 @@
+.section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.12s;
+}
+
+.header:hover {
+  background: var(--color-surface-hover);
+}
+
+.iconTitle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: 0.01em;
+}
+
+.chevron {
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.chevron.open {
+  transform: rotate(0deg);
+}
+
+.chevron:not(.open) {
+  transform: rotate(-90deg);
+}
+
+.body {
+  padding: 4px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: slideDown 0.18s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

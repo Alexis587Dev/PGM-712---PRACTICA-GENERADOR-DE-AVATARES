@@ -1,0 +1,45 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-sidebar-bg);
+  border-right: 1px solid var(--color-border);
+  width: 280px;
+  min-width: 280px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  margin: 0;
+}
+
+.sections {
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.sections::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sections::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sections::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}

@@ -1,0 +1,67 @@
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 32px;
+  border-top: 1px solid var(--color-border);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnGhost,
+.btnSecondary,
+.btnPrimary {
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.btnGhost {
+  background: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.btnGhost:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.btnSecondary {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.btnSecondary:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent-soft);
+}
+
+.btnPrimary {
+  background: var(--color-accent);
+  color: #ffffff;
+  border-color: var(--color-accent);
+}
+
+.btnPrimary:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+}
+
+.btnPrimary.saved {
+  background: #2ecc71;
+  border-color: #27ae60;
+}
+
+.btnGhost:active,
+.btnSecondary:active,
+.btnPrimary:active {
+  transform: scale(0.97);
+}
