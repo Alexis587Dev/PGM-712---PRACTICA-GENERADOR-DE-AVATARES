@@ -1,7 +1,7 @@
 import React from 'react';
 import NiceAvatar from 'react-nice-avatar';
 import type { AvatarConfig } from '../types/avatar.types';
-import styles from './AvatarPreview.module.css';
+import styles from '../styles/AvatarPreview.module.css';
 
 interface AvatarPreviewProps {
   config: AvatarConfig;
