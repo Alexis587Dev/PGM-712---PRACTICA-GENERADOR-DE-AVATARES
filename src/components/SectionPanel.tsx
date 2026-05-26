@@ -3,7 +3,7 @@ import styles from '../styles/SectionPanel.module.css';
 
 interface SectionPanelProps {
   title: string;
-  icon: string;
+  icon: React.ReactNode;
   children: React.ReactNode;
   defaultOpen?: boolean;
 }
@@ -12,7 +12,7 @@ const SectionPanel: React.FC<SectionPanelProps> = ({
   title,
   icon,
   children,
-  defaultOpen = true,
+  defaultOpen = false,
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 

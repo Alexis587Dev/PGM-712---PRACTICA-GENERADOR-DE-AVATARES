@@ -3,7 +3,7 @@ import { useAvatarConfig } from '../hooks/useAvatarConfig';
 import AvatarSidebar from './AvatarSidebar';
 import AvatarPreview from './AvatarPreview';
 import AvatarActions from './AvatarActions';
-import styles from './AvatarEditor.module.css';
+import styles from '../styles/AvatarEditor.module.css';
 
 const AvatarEditor: React.FC = () => {
   const { config, updateConfig, randomize, reset } = useAvatarConfig();

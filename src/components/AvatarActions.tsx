@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { AvatarConfig } from '../types/avatar.types';
 import { exportConfigAsJSON } from '../utils/avatarUtils';
-import styles from './AvatarActions.module.css';
+import styles from '../styles/AvatarActions.module.css';
 
 interface AvatarActionsProps {
   config: AvatarConfig;
@@ -28,7 +28,7 @@ const AvatarActions: React.FC<AvatarActionsProps> = ({
         Restablecer
       </button>
       <button type="button" className={styles.btnSecondary} onClick={onRandomize}>
-        🎲 Aleatorio
+        Aleatorio
       </button>
       <button
         type="button"
